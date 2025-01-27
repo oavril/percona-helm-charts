@@ -98,7 +98,7 @@ spec:
   template:
     spec:
       containers:
-        - image: alpine:3.20
+        - image: {{ .Values.upgrade.image }}:{{ .Values.upgrade.tag }}
           name: {{ $hookName }}
           command:
             - /bin/sh

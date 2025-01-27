@@ -1,0 +1,9 @@
+# Image to use for cleanup
+kubectl:
+  image: "bitnami/kubectl"
+  tag: "latest"
+
+# Image to use for checking upgrade
+upgrade:
+  image: "alpine"
+  tag: "3.20"

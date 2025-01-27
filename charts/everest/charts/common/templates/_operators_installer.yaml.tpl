@@ -79,7 +79,7 @@ spec:
   template:
     spec:
       containers:
-        - image: bitnami/kubectl:latest
+        - image: {{ .Values.kubectl.image }}:{{ .Values.kubectl.tag }}
           name: {{ $hookName }}
           command:
             - /bin/sh
